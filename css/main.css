@@ -1,0 +1,115 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: pink;
+    height: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+}
+
+article {
+    flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    -moz-flex: 1;
+    flex-basis: 20%;
+    -webkit-flex-basis: 20%;
+    -moz-flex-basis: 20%;
+    -ms-flex-basis: 20%;
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+}
+
+article:nth-of-type(1) {
+    flex: 2;
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    -moz-flex: 2;
+    flex-basis: 30%;
+    -webkit-flex-basis: 30%;
+    -moz-flex-basis: 30%;
+    -ms-flex-basis: 30%;
+}
+
+article, article:nth-of-type(1) {
+    flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    -moz-flex-grow: 1;
+}
+
+footer {
+    background: red;
+    height: 100px;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+    section {
+        flex-direction: row;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+    section {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+    }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+    section {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+    }
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+    section {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+    }
+}
